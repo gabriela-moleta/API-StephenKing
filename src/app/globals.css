@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Simplificado: removido @theme inline para evitar warnings */
+
+/* Removido dark mode para forçar tema claro pedido */
+
+body {
+  background:#ffffff !important;
+  color:#111 !important;
+  font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

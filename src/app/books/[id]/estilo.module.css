@@ -1,0 +1,96 @@
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: system-ui, sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #fff;
+    border: 2px solid #ff2e92;
+    border-radius: 18px;
+    padding: 1.75rem;
+    box-shadow: 0 6px 18px -4px rgba(0, 0, 0, .15);
+}
+
+@media(min-width:840px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 2/3;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffe3f2;
+    border: 1px solid #ffc2e2;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+}
+
+.title {
+    font-size: 2rem;
+    margin: .25rem 0 1rem;
+    line-height: 1.1;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: grid;
+    gap: .25rem;
+    font-size: .9rem;
+}
+
+.desc {
+    line-height: 1.45;
+    font-size: .95rem;
+}
+
+.actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: .75rem;
+}
+
+.btn,
+.btnOutline {
+    text-decoration: none;
+    padding: .65rem 1rem;
+    border-radius: 8px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.btn {
+    background: #ff2e92;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #d60067;
+}
+
+.btnOutline {
+    border: 2px solid #ff2e92;
+    color: #ff2e92;
+}
+
+.btnOutline:hover {
+    background: #ff2e92;
+    color: #fff;
+}
